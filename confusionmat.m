@@ -1,0 +1,9 @@
+I1=imread('got.jpg');
+I2=imread('ground3.jpg');
+I3=I1(:);
+I4=I2(:);
+I5=I3>254;
+I6=I4>254;
+c=confusionmat(I5,I6);
+disp('confusion');
+disp(c)
